@@ -2,13 +2,13 @@
 
 A stable, streamlined Python project template for experimentation and rich interactive display — without requiring Jupyter notebooks.
 
-Includes:
-	•	Opinionated Python formatting with Black
-	•	Debugging support via VS Code’s Debug Console
-	•	Clean and minimal project scaffolding
-	•	Optional Jupyter Notebook integration
-	•	Web-based interactive visualisation using Streamlit
-	•	Easy virtual environment setup and commands via make
+Includes:   
+- Opinionated Python formatting with Black
+- Debugging support via VS Code’s Debug Console
+- Clean and minimal project scaffolding
+- Optional Jupyter Notebook integration
+- Web-based interactive visualisation using Streamlit
+- Easy virtual environment setup and commands via make
 
 Ideal for learners, data explorers, and developers who want to combine Python scripting with browser-based UIs — all inside a reproducible project structure.
 
