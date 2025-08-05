@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# VS Code workspace files (optional)
+.vscode/*.code-workspace
+.vscode/*.suo
+.vscode/*.ntvs*
+.vscode/*.njsproj
+.vscode/*.sln
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS metadata
+.DS_Store
+
+# Python test cache
+.pytest_cache/
