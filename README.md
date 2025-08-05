@@ -1,21 +1,28 @@
-# Python Coding Starter
+## 🐞 Debugging in VS Code (Beginner-Friendly)
 
-This is a simple environment for learning Python with VS Code.
+This project is configured to give you a **clean and simple debugging experience** using VS Code's **Debug Console** instead of the Terminal.
 
-## 🚀 Getting Started
+### ✅ What happens when you press `F5`
 
-1. Open this folder in VS Code
-2. Open `main.py` and press `F5` to run it
-3. Or open a notebook in the `notebooks/` folder
+- VS Code runs your current Python file
+- Output appears in the **Debug Console**
+- No flashing terminal, no extra launch noise
+- Errors and `print()` statements are easy to see
+- You can still set breakpoints later when you're ready
 
-## ✅ Features
+### ✅ Why this matters for beginners
 
-- Works with `.py` and `.ipynb`
-- Clean output with minimal clutter
-- Auto-formatting with Black
-- Notebook line numbers enabled
-- Jupyter support ready out-of-the-box
+- Keeps the focus on your code, not VS Code internals
+- Avoids confusing messages from `debugpy` or the terminal
+- Provides a stable, readable output area while you learn
 
-## Optional
+---
 
-- Create a virtual environment:
+## ⚙️ How It Works (Under the Hood)
+
+- We use a `launch.json` config that tells VS Code:
+  - Run the current file
+  - Use the internal debug console
+  - Ignore unrelated Python internals (`justMyCode: true`)
+
+You can find this setup in:
