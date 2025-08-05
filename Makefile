@@ -14,10 +14,15 @@ help:
 
 setup:
 	$(PYTHON) -m venv $(VENV_DIR)
-	. $(ACTIVATE) && pip install --upgrade pip
-	. $(ACTIVATE) && pip install -r $(REQ)
-	@echo "✅ Virtual environment set up in $(VENV_DIR)"
-	@echo "💡 Run 'source $(ACTIVATE)' to activate it"
+	@. $(ACTIVATE) && \
+	pip install --upgrade pip && \
+	pip install -r $(REQ) && \
+	echo "🛠️  Preloading matplotlib to build font cache..." && \
+	python -c "import matplotlib.pyplot as plt; plt.figure()" && \
+	echo "✅ Virtual environment set up in $(VENV_DIR)" && \
+	echo "🐍 Python path inside venv: $$(which python)"
+	echo "💡 Run 'source $(ACTIVATE)' to activate it" && \
+	
 
 install:
 	. $(ACTIVATE) && pip install -r $(REQ)
@@ -25,3 +30,4 @@ install:
 clean:
 	rm -rf $(VENV_DIR)
 	@echo "🧹 Removed virtual environment"
+	@echo "⚠️  If your shell prompt still shows (.venv), run 'deactivate'"

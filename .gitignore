@@ -24,3 +24,6 @@ venv/
 
 # Python test cache
 .pytest_cache/
+
+# Performance profiling
+profile.out

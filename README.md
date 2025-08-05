@@ -1,13 +1,16 @@
 # 🐍 Python Starter Environment
 
-A lightweight Python project starter kit for learning and experimentation.
+A stable, streamlined Python project template for experimentation and rich interactive display — without requiring Jupyter notebooks.
 
 Includes:
-- Python formatting with **Black**
-- Debugging via VS Code’s **Debug Console**
-- Cleaner project defaults
-- Optional **Jupyter Notebook** support
-- Easy virtual environment setup via `make`
+	•	Opinionated Python formatting with Black
+	•	Debugging support via VS Code’s Debug Console
+	•	Clean and minimal project scaffolding
+	•	Optional Jupyter Notebook integration
+	•	Web-based interactive visualisation using Streamlit
+	•	Easy virtual environment setup and commands via make
+
+Ideal for learners, data explorers, and developers who want to combine Python scripting with browser-based UIs — all inside a reproducible project structure.
 
 ---
 
@@ -28,11 +31,49 @@ This will:
 - Create a local .venv folder
 - Install packages listed in requirements.txt
 
-1. **Activate your environment**
-   ```bash
-   source .venv/bin/activate
-   ```
-(On Windows PowerShell: .venv\Scripts\Activate.ps1)
+### 🖥️ Activating the Virtual Environment (Cross-Platform)
+
+Before running code or installing packages, activate the virtual environment:
+
+#### macOS / Linux (bash or zsh):
+```
+source .venv/bin/activate
+```
+
+#### Windows – PowerShell:
+```
+. .venv\Scripts\Activate.ps1
+```
+> ⚠️ If you get a script execution error, temporarily allow it with:
+> ```
+> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+> ```
+
+#### Windows – Command Prompt (CMD):
+```
+.venv\Scripts\activate.bat
+```### 🖥️ Activating the Virtual Environment (Cross-Platform)
+
+Before running code or installing packages, activate the virtual environment:
+
+#### macOS / Linux (bash or zsh):
+```bash
+source .venv/bin/activate
+```
+
+#### Windows – PowerShell:
+```
+. .venv\Scripts\Activate.ps1
+```
+> ⚠️ If you get a script execution error, temporarily allow it with:
+> ```
+> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+> ```
+
+#### Windows – Command Prompt (CMD):
+```
+.venv\Scripts\activate.bat
+```
 
 ## 🐞 Debugging in VS Code (Beginner-Friendly)
 
@@ -72,3 +113,11 @@ You can always right-click a `.py` file and choose:
 `Run Python File in Terminal`
 
 This is helpful if you want input/output like a traditional console script.
+
+### 🧩 Optional: Avoid Streamlit link prompts in VS Code
+
+To stop VS Code from asking you whether to open `localhost` links every time:
+
+1. Open the Command Palette
+2. Search for: `Preferences: Configure Trusted Domains`
+3. Add: `http://localhost:*`
