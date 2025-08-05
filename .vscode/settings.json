@@ -4,7 +4,9 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 4,
   "files.exclude": {
-    "**/__pycache__": true
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.*": true
   },
   "notebook.lineNumbers": "on",
   "debug.defaultConfig": {
