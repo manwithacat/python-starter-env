@@ -1,0 +1,23 @@
+{
+  "python.defaultInterpreterPath": "python3", // auto-detect or use venv
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "notebook.lineNumbers": "on",
+  "debug.defaultConfig": {
+    "name": "Run current file (Debug Console)",
+    "type": "python",
+    "request": "launch",
+    "program": "${file}",
+    "console": "internalConsole",
+    "justMyCode": true
+  },
+  "debug.showInStatusBar": "never",
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": false
+}
