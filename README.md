@@ -75,6 +75,36 @@ source .venv/bin/activate
 .venv\Scripts\activate.bat
 ```
 
+### 🪟 Windows Support
+
+> ✅ This project is designed to work best on **Windows via WSL (Windows Subsystem for Linux)**.
+
+If you're using Windows, we **strongly recommend** installing [WSL](https://learn.microsoft.com/en-us/windows/wsl/) and using a Linux distribution such as Ubuntu. This enables full compatibility with:
+- `make`-based setup scripts
+- Streamlit development servers
+- Terminal features used by tools like `yaspin` and `black`
+- Clean virtual environment activation
+
+#### ⚙️ What WSL enables:
+- Native support for Unix-like tools (`make`, `bash`, etc.)
+- Faster, more stable terminal-based workflows
+- No need for extra configuration to avoid PowerShell limitations
+
+#### ⚠️ Not Recommended
+Running this project in:
+- **PowerShell**
+- **CMD**
+- **Git Bash**
+
+...may lead to:
+- Script execution policy errors
+- Broken or slow terminal rendering
+- Issues activating the virtual environment
+- Lack of `make` or Unix tools
+
+If you're a developer on Windows, WSL should be considered a basic prerequisite.
+
+
 ## 🐞 Debugging in VS Code (Beginner-Friendly)
 
 This project is configured to give you a **clean and simple debugging experience** using VS Code's **Debug Console** instead of the Terminal.
