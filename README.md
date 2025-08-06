@@ -60,21 +60,6 @@ Before running code or installing packages, activate the virtual environment:
 ```bash
 source .venv/bin/activate
 ```
-
-#### Windows – PowerShell:
-```
-. .venv\Scripts\Activate.ps1
-```
-> ⚠️ If you get a script execution error, temporarily allow it with:
-> ```
-> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-> ```
-
-#### Windows – Command Prompt (CMD):
-```
-.venv\Scripts\activate.bat
-```
-
 ### 🪟 Windows Support
 
 > ✅ This project is designed to work best on **Windows via WSL (Windows Subsystem for Linux)**.
