@@ -21,7 +21,7 @@ setup:
 	python -c "import matplotlib.pyplot as plt; plt.figure()" && \
 	echo "✅ Virtual environment set up in $(VENV_DIR)" && \
 	echo "🐍 Python path inside venv: $$(which python)"
-	echo "💡 Run 'source $(ACTIVATE)' to activate it" && \
+	echo "💡 Run 'source $(ACTIVATE)' to activate it"
 	
 
 install:
